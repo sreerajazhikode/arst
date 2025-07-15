@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARST - Architectural and Structural Design Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('C:\Users\user\Desktop\1');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-800">ARST</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-blue-600">Home</a>
+                    <a href="#about" class="text-gray-800 hover:text-blue-600">About Us</a>
+                    <a href="#services" class="text-gray-800 hover:text-blue-600">Services</a>
+                    <a href="#contact" class="text-gray-800 hover:text-blue-600">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile menu -->
+            <div class="mobile-menu hidden md:hidden pb-4">
+                <a href="#home" class="block py-2 text-gray-800">Home</a>
+                <a href="#about" class="block py-2 text-gray-800">About Us</a>
+                <a href="#services" class="block py-2 text-gray-800">Services</a>
+                <a href="#contact" class="block py-2 text-gray-800">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Welcome to ARST</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Providing expert structural design services to meet all your architectural needs.</p>
+            <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-block">
+                Our Services
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <img src="C:/Users/user/Desktop/1.jpg" alt="Modern architectural office with designers working on blueprints and 3D models" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">About Us</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        ARST specializes in the structural design of concrete and steel structures, seismic design, wind force analysis, retrofitting, rehabilitation, and repair work.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        With years of experience in the field, our team of skilled professionals delivers innovative and efficient structural solutions tailored to your specific requirements.
+                    </p>
+                    <a href="#contact" class="text-blue-600 hover:text-blue-800 font-semibold">Get in touch with us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive architectural and structural solutions for residential and commercial projects</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all">
+                    <div class="mb-6">
+                        <img src="https://placehold.co/400x250" alt="Detailed architectural blueprint with building plan measurements and layout" class="rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Building Plans</h3>
+                    <p class="text-gray-600">
+                        We create building plans according to Vaastu, ensuring a harmonious living space that combines traditional wisdom with modern architectural principles.
+                    </p>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all">
+                    <div class="mb-6">
+                        <img src="https://placehold.co/400x250" alt="Structural analysis diagram showing load distribution in a concrete and steel building" class="rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Structural Design</h3>
+                    <p class="text-gray-600">
+                        Our experts handle structural designs of concrete and steel structures with meticulous attention to safety standards and building codes.
+                    </p>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white p-8 rounded-lg shadow-lg transition-all">
+                    <div class="mb-6">
+                        <img src="https://placehold.co/400x250" alt="Photorealistic 3D rendering of a contemporary house exterior with landscaping" class="rounded-lg">
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">3D Views</h3>
+                    <p class="text-gray-600">
+                        We offer 3D views, interior and exterior designs, and landscape designs to bring your vision to life before construction begins.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                <p class="max-w-2xl mx-auto opacity-90">Get in touch with our experts to discuss your project requirements</p>
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:justify-between">
+                <div class="mb-10 md:mb-0 md:w-1/2">
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold mb-2">Address</h3>
+                        <p>Paduvadukkam, Nr. Municipal Stadium, Vidyanagar, Kasaragod, Kerala 671123</p>
+                    </div>
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold mb-2">Phone</h3>
+                        <p>090482 69584</p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <form class="bg-white p-8 rounded-lg shadow-lg text-gray-800">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="name">Name</label>
+                            <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="email">Email</label>
+                            <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-bold mb-2" for="message">Message</label>
+                            <textarea class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="message" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition-colors" type="submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-xl font-bold">ARST</span>
+                    <p class="mt-2 text-gray-400">Architectural and Structural Design Services</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#home" class="hover:text-blue-400">Home</a>
+                    <a href="#about" class="hover:text-blue-400">About Us</a>
+                    <a href="#services" class="hover:text-blue-400">Services</a>
+                    <a href="#contact" class="hover:text-blue-400">Contact Us</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-gray-400 text-center">
+                <p>© 2023 ARST. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                document.querySelector('.mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple validation
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if (!name || !email || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+            
+            // Here you would typically send the form data to a server
+            alert('Thank you for your message! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
