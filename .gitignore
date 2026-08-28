@@ -1,0 +1,18 @@
+# Dependencies are installed by the deployment environment.
+node_modules/
+
+# Production output
+dist/
+
+# Local configuration and logs
+.env
+.env.*
+*.local
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editor and OS files
+.DS_Store
+.vscode/
+*.swp
